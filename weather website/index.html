@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <!-- marking card where all display happens -->
+        <div class="card">
+            <!-- this where search happens -->
+            <div class="find">
+                <input type="text" placeholder="Enter City" id="name" value="New Delhi">
+                <a href="#"><img src="media/search.png" onclick="run()" id="search_btn"></a>
+            </div>
+
+            <!-- This  display current weather pic-->
+            <div class="weather">
+                <img src="media/sun.png" id="climate">
+            </div>
+            <!-- City Name -->
+            <div class="city" id="city">New Delhi</div>
+            <!-- City Temp -->
+            <div class="temp" id="temp">26&#176;C</div>
+
+            <div class="info">
+                <div class="humidity">
+                    <img src="media/humidity.png" alt="">
+                    <div>
+                    <p id="humidity">35%<br><p style="font-size: 1em;margin-top: -10px;">Humidity</p>
+                    </p></div>
+                </div>
+                <div class="wind">
+                    <img src="media/wind.png" alt="">
+                    <div style="margin-top: 15px;">
+                    <span id="wind" style="font-size: 1.5em; padding-left: 15px;">35</span>
+                    <span style="font-size: 1em;">km/hr</span><p style="font-size: 1em; margin-top: -10px; width: 113px;">wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>  
+</body>
+</html>
